@@ -1,6 +1,6 @@
 <?php
 
-$idade = 16;
+$idade = 18;
 $numeroDePessoas = 2;
 
 echo "Você só pode entrar, com idade a partir de 18 anos ou ";
