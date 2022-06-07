@@ -9,5 +9,5 @@ $contasCorrentes['325.655.896-12'] = sacar($contasCorrentes['325.655.896-12'], 1
 $contasCorrentes['123.456.789-10'] = depositar ($contasCorrentes['123.456.789-10'], 200);
 
 foreach ($contasCorrentes as $cpf => $conta) {
-    exibeMensagem($cpf . " " . $conta['titular'] . ' ' .$conta['saldo']);
+    exibeMensagem ( "$cpf {$conta['titular']} {$conta['saldo']}" );
 }
