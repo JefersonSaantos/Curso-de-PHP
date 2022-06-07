@@ -11,5 +11,8 @@ $contasCorrentes['123.456.789-10'] = depositar ($contasCorrentes['123.456.789-10
 titularComLetrasMaiusculas($contasCorrentes['048.658.985-80']);
 
 foreach ($contasCorrentes as $cpf => $conta) {
-    exibeMensagem ( "$cpf {$conta['titular']} {$conta['saldo']}" );
+
+//Uso da função List para um array com variáveis separadas.    
+    ['titular' => $titular, 'saldo' => $saldo] = $conta;
+    exibeMensagem ( "$cpf $titular $saldo" ) ;
 }
