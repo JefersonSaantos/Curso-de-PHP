@@ -10,6 +10,8 @@ $contasCorrentes['123.456.789-10'] = depositar ($contasCorrentes['123.456.789-10
 
 titularComLetrasMaiusculas($contasCorrentes['048.658.985-80']);
 
+unset ($contasCorrentes ['048.658.985-80']);
+
 foreach ($contasCorrentes as $cpf => $conta) {
 
 //Uso da função List para um array com variáveis separadas.    
