@@ -36,5 +36,6 @@ var_dump(isset($notas['Vinícius']));
 echo 'Alguém tirou 10? ' . PHP_EOL;
 var_dump(in_array(10, $notas));
 
+//Podemos buscar dentro de um valor a sua chave, com a função array_search
 echo 'Quem tirou 10? ' . PHP_EOL;
 echo array_search(10, $notas);
