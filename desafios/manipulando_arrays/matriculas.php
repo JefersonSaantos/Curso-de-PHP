@@ -1,26 +1,5 @@
 <?php
 
-$alunos2021 = [
-    'Vinícius',
-    'João',
-    'Ana',
-    'Roberto',
-    'Maria'
-];
-
-$novosAlunos = [
-    'Patricia',
-    'Nico',
-    'Kilderson',
-    'Daiane'
-];
-
-$alunos2022 = [...$alunos2021, ...$novosAlunos];
-
-var_dump($alunos2022);
-
-// OU
-
 /*$alunos2021 = [
     0 => 'Vinícius',
     1 => 'João',
@@ -39,3 +18,30 @@ $novosAlunos = [
 $alunos2022 = $alunos2021 + $novosAlunos;
 
 var_dump($alunos2022);*/
+
+$alunos2021 = [
+    'Vinícius',
+    'João',
+    'Ana',
+    'Roberto',
+    'Maria'
+];
+
+$novosAlunos = [
+    'Patricia',
+    'Nico',
+    'Kilderson',
+    'Daiane'
+];
+
+$alunos2022 = array_merge($alunos2021, $novosAlunos);
+//$alunos2022 = [...$alunos2021, ...$novosAlunos]; Operador de Unpacking.
+
+array_push($alunos2022, 'Alice', 'Bob', 'Charlie');
+$alunos2022[] = 'Luiz';
+array_unshift($alunos2022, 'Stephane', 'Rafaela');
+
+echo array_shift($alunos2022) . PHP_EOL; //Remove no início.
+echo array_pop($alunos2022) . PHP_EOL; //Remove no final.
+
+var_dump($alunos2022);
