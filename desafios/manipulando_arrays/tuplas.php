@@ -9,4 +9,5 @@ $dados = [
 
 //extract($dados); TRANSFORMA OS AS CHAVES EM VARIÁVEIS.
 //var_dump(compact('nome', 'nota', 'idade'); TRANSFORMA VARIÁVEIS EM UM ARRAY.
+
 var_dump($nome, $nota, $idade);
